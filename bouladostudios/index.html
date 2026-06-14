@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boulado Studio's — Roblox Game Development</title>
+  <meta name="description" content="Estúdio profissional de desenvolvimento de jogos Roblox. Transformamos ideias em experiências épicas." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======= CURSOR CUSTOM ======= -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ======= LOADER ======= -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-b">B</span><span class="loader-s">S</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill" id="loader-fill"></div></div>
+      <p class="loader-text">Iniciando Sistema...</p>
+    </div>
+  </div>
+
+  <!-- ======= NAV ======= -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">BOULADO</span>
+        <span class="logo-accent">STUDIO'S</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#team" class="nav-link">Equipe</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-outline nav-cta">Trabalhe Conosco</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-particles" id="hero-particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        <span>Roblox Game Development Studio</span>
+        <span class="eyebrow-dot"></span>
+      </div>
+
+      <h1 class="hero-title reveal reveal--delay-1">
+        <span class="title-line">Nós Construímos</span>
+        <span class="title-line title-line--accent">Mundos Dentro</span>
+        <span class="title-line">do Roblox</span>
+      </h1>
+
+      <p class="hero-sub reveal reveal--delay-2">
+        Do conceito ao lançamento — criamos experiências que os jogadores não conseguem largar.
+        <br />Scripts robustos. Design imersivo. Resultados reais.
+      </p>
+
+      <div class="hero-actions reveal reveal--delay-3">
+        <a href="#projects" class="btn btn-primary">
+          <span>Ver Projetos</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Falar com o Estúdio</span>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal reveal--delay-4">
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projetos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Anos de Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="410">0</span><span class="stat-plus">M+</span>
+          <span class="stat-label">Players Impactados</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// sobre o estúdio</span>
+        <h2 class="section-title">Uma equipe que<br /><em>pensa como jogadores</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            Somos o <strong>Boulado Studio's</strong> — um estúdio independente apaixonado por Roblox que transforma conceitos em jogos que as pessoas voltam a jogar.
+          </p>
+          <p>
+            Nossa abordagem combina design orientado a dados, programação Lua de alto nível e uma visão criativa que respeita o que os jogadores realmente querem. Cada projeto recebe atenção total da concepção ao pós-lançamento.
+          </p>
+          <div class="about-badges">
+            <span class="badge">Lua / Luau</span>
+            <span class="badge">Roblox Studio</span>
+            <span class="badge">Game Design</span>
+            <span class="badge">UI/UX</span>
+            <span class="badge">Monetização</span>
+            <span class="badge">Live Ops</span>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card reveal reveal--delay-1">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Design Imersivo</h3>
+            <p>Ambientes e interfaces que absorvem o jogador do primeiro segundo ao último.</p>
+          </div>
+          <div class="about-card reveal reveal--delay-2">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Código de Qualidade</h3>
+            <p>Scripts Luau modulares, performáticos e de fácil manutenção a longo prazo.</p>
+          </div>
+          <div class="about-card reveal reveal--delay-3">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Entrega Rápida</h3>
+            <p>Processos ágeis que respeitam prazos sem sacrificar a qualidade do produto final.</p>
+          </div>
+          <div class="about-card reveal reveal--delay-4">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Suporte Contínuo</h3>
+            <p>Acompanhamento pós-lançamento, atualizações e otimização de métricas de retenção.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar reveal">
+        <div class="stats-bar-item">
+          <span class="stats-bar-num counter" data-target="15">0</span><span>+</span>
+          <span class="stats-bar-label">Projetos Entregues</span>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-num counter" data-target="95">0</span><span>%</span>
+          <span class="stats-bar-label">Satisfação dos Clientes</span>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-num counter" data-target="2">0</span><span>+</span>
+          <span class="stats-bar-label">Anos de Mercado</span>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-num counter" data-target="410">0</span><span>M+</span>
+          <span class="stats-bar-label">Players Alcançados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// portfólio</span>
+        <h2 class="section-title">Projetos que<br /><em>falam por si</em></h2>
+        <p class="section-sub">Cada jogo tem uma história. Aqui estão as nossas.</p>
+      </div>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="rpg">RPG</button>
+        <button class="filter-btn" data-filter="simulator">Simulador</button>
+        <button class="filter-btn" data-filter="tycoon">Tycoon</button>
+        <button class="filter-btn" data-filter="hangout">hangout</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="project-card reveal" data-category="rpg">
+          <div class="project-img-wrap">
+            <img src="https://i.ibb.co/KpfTjx0N/image.png" alt="Dark Realms RPG" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag--rpg">RPG</span>
+              <span class="tag">Omni</span>
+              <span class="tag">Ben10</span>
+            </div>
+            <h3 class="project-title">Omni-X</h3>
+            <p class="project-desc">RPG imersivo com sistema de classes, dungeons engajado dentro do mundo de ben 10.</p>
+            <div class="project-meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                200M+ plays
+              </span>
+              <span class="project-status project-status--live">● Live</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal--delay-1" data-category="hangout">
+          <div class="project-img-wrap">
+            <img src="https://i.ibb.co/RGqmSCjZ/image.png" alt="Space Mining Sim" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag--sim">Hangout</span>
+              <span class="tag">VoiceChat</span>
+              <span class="tag">Podcasts</span>
+            </div>
+            <h3 class="project-title">Roblox Podcasts</h3>
+            <p class="project-desc">Roleplay onde jogadores podem criar lobby com o intuito de "gerar entretenimento" com outros.</p>
+            <div class="project-meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                100M+ plays
+              </span>
+              <span class="project-status project-status--live">● Live</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--featured reveal reveal--delay-2" data-category="tycoon">
+          <div class="project-img-wrap">
+            <img src="https://i.ibb.co/cXgByybx/Whale-Studio.png" alt="Empire Tycoon" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+            <div class="featured-badge">DESTAQUE</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag--tycoon">Tycoon</span>
+              <span class="tag">Multiplayer</span>
+              <span class="tag">Anti-Cheat</span>
+              <span class="tag">Live Ops</span>
+            </div>
+            <h3 class="project-title">Whale Studio</h3>
+            <p class="project-desc">Empresa responsável por diversos jogos de simulador, parkuors dentre outros relacionados ao público infantil.</p>
+            <div class="project-meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                100M+ plays
+              </span>
+              <span class="project-status project-status--live">● Live</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="simulator">
+          <div class="project-img-wrap">
+            <img src="https://i.ibb.co/kVQpsgsM/244-Studio.png" alt="Zero Protocol FPS" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag--simulator">simulador</span>
+              <span class="tag">Motos</span>
+              <span class="tag">244</span>
+            </div>
+            <h3 class="project-title">244 Studios</h3>
+            <p class="project-desc">Diversos jogos relacionados com o esporte de bicicletas, popularmente conhecidos como "244 GAMES".</p>
+            <div class="project-meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                70M+ plays
+              </span>
+              <span class="project-status project-status--live">● Live</span>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TEAM ======= -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// a equipe</span>
+        <h2 class="section-title">As pessoas por<br /><em>trás dos jogos</em></h2>
+        <p class="section-sub">Especialistas apaixonados por cada detalhe.</p>
+      </div>
+
+      <div class="team-grid" id="team-grid">
+
+        <!-- Gabriel de Lima - FOTO DO USUÁRIO -->
+        <div class="team-card reveal" data-role="Lead">
+          <div class="team-card-inner">
+            <div class="team-img-wrap">
+              <!-- SUBSTITUA src pela imagem enviada pelo usuário -->
+              <img
+                src="gabriel2.png"
+                alt="Gabriel de Lima"
+                class="team-img"
+                onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80'"
+              />
+              <div class="team-img-border"></div>
+            </div>
+            <div class="team-info">
+              <div class="team-role-badge">Fundador & Lead Dev</div>
+              <h3 class="team-name">Gabriel de Lima</h3>
+              <p class="team-bio">Lead developer e fundador do estúdio. Especialista em sistemas complexos, arquitetura de jogos e liderança técnica.</p>
+              <div class="team-skills">
+                <span>Building/Modeler 3D</span>
+                <span>Arquitetura</span>
+                <span>Game Design</span>
+              </div>
+              <div class="team-socials">
+                <a href="#" class="team-social" aria-label="Discord">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+                </a>
+                <a href="#" class="team-social" aria-label="Twitter/X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="team-social" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 2 -->
+        <div class="team-card reveal reveal--delay-1">
+          <div class="team-card-inner">
+            <div class="team-img-wrap">
+              <img src="davi.jpeg" alt="Dev 2" class="team-img" />
+              <div class="team-img-border"></div>
+            </div>
+            <div class="team-info">
+              <div class="team-role-badge">General Manager & CFO</div>
+              <h3 class="team-name">Davi Martins</h3>
+              <p class="team-bio">Gestão de projetos e coordenação da equipe de desenvolvimento.</p>
+              <div class="team-skills">
+                <span>Manager</span>
+                <span>Administração</span>
+                <span>Financeiro</span>
+              </div>
+              <div class="team-socials">
+                <a href="#" class="team-social" aria-label="Discord">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+                </a>
+                <a href="#" class="team-social" aria-label="Twitter/X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membro 3 -->
+        <div class="team-card reveal reveal--delay-2">
+          <div class="team-card-inner">
+            <div class="team-img-wrap">
+              <img src="neva.jpeg" alt="Dev 3" class="team-img" />
+              <div class="team-img-border"></div>
+            </div>
+            <div class="team-info">
+              <div class="team-role-badge">Senior Scripter</div>
+              <h3 class="team-name">Neva</h3>
+              <p class="team-bio">Roblox Scriper, especializada em criar scripts eficientes e otimizados para melhorar a experiência do jogador.</p>
+              <div class="team-skills">
+                <span>LUAu</span>
+                <span>Lead Scripter</span>
+                <span>New Member</span>
+              </div>
+              <div class="team-socials">
+                <a href="#" class="team-social" aria-label="Discord">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+                </a>
+                <a href="#" class="team-social" aria-label="Twitter/X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">// contato</span>
+          <h2 class="section-title">Pronto para<br /><em>construir algo épico?</em></h2>
+          <p>Seja um cliente novo, uma parceria ou uma ideia, a gente quer ouvir. Resposta em até 24h.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Discord</span>
+                <span class="contact-val">Boulado Studio's Server</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-val">gabriel123oip@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Twitter / X</span>
+                <span class="contact-val">@BouladoStudios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xrevrbqn" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="type">Tipo de Projeto</label>
+            <select id="type" name="type">
+              <option value="">Selecione...</option>
+              <option>RPG / Aventura</option>
+              <option>Simulator</option>
+              <option>Tycoon</option>
+              <option>Hangout / Action</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conte sobre seu projeto..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Enviar Mensagem</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-note">Resposta garantida em até 24 horas úteis.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">BOULADO</span>
+            <span class="logo-accent">STUDIO'S</span>
+            <span class="logo-bracket">]</span>
+          </a>
+          <p>Construindo mundos dentro do Roblox desde 2024.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Discord" class="footer-social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="footer-social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub" class="footer-social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#team">Equipe</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#">Scripting Luau</a></li>
+              <li><a href="#">Game Design</a></li>
+              <li><a href="#">UI/UX para Roblox</a></li>
+              <li><a href="#">Consultoria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Boulado Studio's. Todos os direitos reservados.</p>
+        <p class="footer-made">Feito com <span class="heart">♥</span> e muito Lua</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
